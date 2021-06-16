@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="JSerializer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="TestConsole">
+				<Option output="bin/test/JSerializer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/test/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Lib">
+				<Option output="lib/JSerializer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/lib/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++17" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+		</Linker>
+		<Unit filename="include/CJsonArrayValue.h" />
+		<Unit filename="include/CJsonBoolValue.h" />
+		<Unit filename="include/CJsonFormatter.h" />
+		<Unit filename="include/CJsonNullValue.h" />
+		<Unit filename="include/CJsonNumberValue.h" />
+		<Unit filename="include/CJsonObjectMemberToken.h" />
+		<Unit filename="include/CJsonObjectValue.h" />
+		<Unit filename="include/CJsonOutputSAX.h" />
+		<Unit filename="include/CJsonStringValue.h" />
+		<Unit filename="include/CJsonVariant.h" />
+		<Unit filename="include/CPolymorphicFactory.h" />
+		<Unit filename="include/CPolymorphicSerializable.h" />
+		<Unit filename="include/CSerializableMember.h" />
+		<Unit filename="include/CSerializableMethod.h" />
+		<Unit filename="include/CSerializationIn.h" />
+		<Unit filename="include/CSerializationOut.h" />
+		<Unit filename="include/ContainerSerialization.h" />
+		<Unit filename="include/IJsonValue.h" />
+		<Unit filename="include/IPolymorphicSerializable.h" />
+		<Unit filename="include/ISerializableMember.h" />
+		<Unit filename="include/ISerializationScheme.h" />
+		<Unit filename="include/JSerializer.h" />
+		<Unit filename="src/CJsonArrayValue.cpp" />
+		<Unit filename="src/CJsonBoolValue.cpp" />
+		<Unit filename="src/CJsonFormatter.cpp" />
+		<Unit filename="src/CJsonNullValue.cpp" />
+		<Unit filename="src/CJsonNumberValue.cpp" />
+		<Unit filename="src/CJsonObjectMemberToken.cpp" />
+		<Unit filename="src/CJsonObjectValue.cpp" />
+		<Unit filename="src/CJsonOutputSAX.cpp" />
+		<Unit filename="src/CJsonStringValue.cpp" />
+		<Unit filename="src/CJsonVariant.cpp" />
+		<Unit filename="src/CPolymorphicFactory.cpp" />
+		<Unit filename="src/CSerializationIn.cpp" />
+		<Unit filename="src/CSerializationOut.cpp" />
+		<Unit filename="src/IPolymorphicSerializable.cpp" />
+		<Unit filename="src/main.cpp">
+			<Option target="TestConsole" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
